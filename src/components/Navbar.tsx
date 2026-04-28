@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, Zap } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const RED = "#dc2626";
 const BLACK = "#0a0a0a";
@@ -45,15 +45,14 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-[76px] flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
-            <div
-              className="h-11 w-11 rounded-lg flex items-center justify-center shadow-sm"
-              style={{ background: RED }}
-            >
-              <Zap className="h-6 w-6" style={{ color: "white" }} fill="white" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="CR Electric LLC"
+              className="h-12 w-auto object-contain"
+            />
             <div>
               <p className="font-extrabold text-gray-900 text-base leading-tight tracking-tight">
-                Voltline Electric
+                CR Electric LLC
               </p>
               <p className="text-gray-500 text-[11px] sm:text-xs uppercase tracking-wider">
                 Licensed Electrical Contractor

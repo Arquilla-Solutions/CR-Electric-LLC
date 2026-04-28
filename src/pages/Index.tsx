@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes. Voltline Electric is a fully licensed electrical contractor, bonded, and carries general liability and workers' comp insurance. Every job is performed or directly supervised by a master electrician, and we'll happily provide proof of license and insurance on request.",
+    a: "Yes. CR Electric LLC is a fully licensed electrical contractor, bonded, and carries general liability and workers' comp insurance. Every job is performed or directly supervised by a master electrician, and we'll happily provide proof of license and insurance on request.",
   },
   {
     q: "Do you offer free estimates?",
@@ -220,7 +220,7 @@ export default function Index() {
               >
                 Master-electrician-owned, fully licensed and insured. From panel
                 upgrades and EV chargers to full commercial wiring, John Smith
-                and the Voltline crew show up on time, work to code, and leave
+                and the CR Electric crew show up on time, work to code, and leave
                 your power safer than we found it.
               </p>
 
@@ -310,7 +310,7 @@ export default function Index() {
                 style={{ background: BLUSH, color: RED_DARK }}
               >
                 <Heart className="h-3.5 w-3.5" />
-                Meet Voltline
+                Meet CR Electric
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                 Master-electrician work,
@@ -318,10 +318,10 @@ export default function Index() {
                 done <span style={{ color: RED }}>the right way.</span>
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Voltline Electric is owned and operated by{" "}
+                CR Electric LLC is owned and operated by{" "}
                 <strong className="text-gray-900">John Smith</strong>, a master
                 electrician with two decades behind the panel. He started
-                Voltline because he was tired of seeing rushed, half-done
+                CR Electric because he was tired of seeing rushed, half-done
                 electrical work in homes and businesses that deserved better.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-7">
@@ -372,19 +372,17 @@ export default function Index() {
                     }}
                   />
                   <div className="relative text-center px-8">
-                    <div
-                      className="h-28 w-28 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-2xl animate-float"
-                      style={{ background: RED }}
-                    >
-                      <Zap className="h-14 w-14" style={{ color: "white" }} fill="white" />
+                    <div className="bg-white rounded-2xl px-6 py-5 mx-auto mb-6 shadow-2xl animate-float inline-block">
+                      <img
+                        src="/logo.png"
+                        alt="CR Electric LLC"
+                        className="h-32 w-auto object-contain"
+                      />
                     </div>
-                    <p className="text-white font-extrabold text-3xl tracking-tight mb-1">
-                      Voltline Electric
-                    </p>
-                    <p className="text-white/60 text-sm uppercase tracking-[0.2em]">
+                    <p className="text-white/60 text-sm uppercase tracking-[0.2em] mb-5">
                       Licensed Electrical Contractor
                     </p>
-                    <div className="h-px w-24 mx-auto my-5" style={{ background: RED }} />
+                    <div className="h-px w-24 mx-auto mb-5" style={{ background: RED }} />
                     <p className="text-white/80 text-sm italic">
                       "If it's not safe, it's not finished."
                     </p>
@@ -592,7 +590,7 @@ export default function Index() {
                 Why Choose Us
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
-                Why people pick <span style={{ color: RED }}>Voltline</span>
+                Why people pick <span style={{ color: RED }}>CR Electric</span>
               </h2>
             </div>
           </Reveal>
@@ -787,10 +785,10 @@ export default function Index() {
               </div>
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-7 text-white/45 text-xs">
                 <a
-                  href="mailto:hello@voltlineelectric.com"
+                  href="mailto:hello@crelectricllc.com"
                   className="flex items-center gap-1.5 hover:text-white"
                 >
-                  <Mail className="h-3.5 w-3.5" /> hello@voltlineelectric.com
+                  <Mail className="h-3.5 w-3.5" /> hello@crelectricllc.com
                 </a>
                 <span className="flex items-center gap-1.5">
                   <MapPin className="h-3.5 w-3.5" /> 123 Main Street, Springfield

@@ -1,6 +1,6 @@
-# Voltline Electric — Demo Site
+# CR Electric LLC — Demo Site
 
-Sample demo site for **Voltline Electric**, a licensed electrical contractor
+Sample demo site for **CR Electric LLC**, a licensed electrical contractor
 in Springfield. This is a polished sample built to show a prospective client
 what their finished site could look like.
 
@@ -9,7 +9,7 @@ what their finished site could look like.
 
 - Owner: John Smith, Master Electrician
 - Phone: (555) 010-2000
-- Email: hello@voltlineelectric.com
+- Email: hello@crelectricllc.com
 - Address: 123 Main Street, Springfield
 
 ## Stack

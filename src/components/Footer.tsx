@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Zap, ShieldCheck } from "lucide-react";
+import { Phone, Mail, MapPin, ShieldCheck } from "lucide-react";
 
 const BLACK = "#0a0a0a";
 const RED = "#dc2626";
@@ -13,14 +13,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-white/10">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div
-                className="h-11 w-11 rounded-lg flex items-center justify-center"
-                style={{ background: RED }}
-              >
-                <Zap className="h-6 w-6" style={{ color: "white" }} fill="white" />
+              <div className="bg-white rounded-lg p-1.5 flex items-center justify-center shadow-sm">
+                <img
+                  src="/logo.png"
+                  alt="CR Electric LLC"
+                  className="h-10 w-auto object-contain"
+                />
               </div>
               <div>
-                <p className="font-extrabold text-base leading-tight">Voltline Electric</p>
+                <p className="font-extrabold text-base leading-tight">CR Electric LLC</p>
                 <p className="text-white/50 text-[11px] uppercase tracking-wider">
                   Licensed Electrical Contractor
                 </p>
@@ -54,11 +55,11 @@ export default function Footer() {
                 (555) 010-2000
               </a>
               <a
-                href="mailto:hello@voltlineelectric.com"
+                href="mailto:hello@crelectricllc.com"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors break-all"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
-                hello@voltlineelectric.com
+                hello@crelectricllc.com
               </a>
               <div className="flex items-start gap-2.5 text-white/65">
                 <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: RED }} />
@@ -133,7 +134,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p>
-              © {new Date().getFullYear()} Voltline Electric · Licensed
+              © {new Date().getFullYear()} CR Electric LLC · Licensed
               Electrical Contractor
             </p>
             <p>Master Electrician Owned · Serving Springfield &amp; Surrounding Areas</p>

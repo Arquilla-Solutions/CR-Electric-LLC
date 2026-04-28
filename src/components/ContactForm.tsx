@@ -113,7 +113,7 @@ export default function ContactForm() {
             />
             <span className="text-gray-500 text-xs leading-relaxed">
               I agree to receive automated text messages from{" "}
-              <strong className="text-gray-700">Voltline Electric</strong> at
+              <strong className="text-gray-700">CR Electric LLC</strong> at
               the number provided. Message and data rates may apply. Reply STOP
               to opt out, HELP for help.
             </span>
