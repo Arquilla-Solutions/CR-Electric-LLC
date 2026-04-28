@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-[76px] flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="CR Electric LLC"
               className="h-12 w-auto object-contain"
             />

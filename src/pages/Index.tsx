@@ -374,7 +374,7 @@ export default function Index() {
                   <div className="relative text-center px-8">
                     <div className="bg-white rounded-2xl px-6 py-5 mx-auto mb-6 shadow-2xl animate-float inline-block">
                       <img
-                        src="/logo.png"
+                        src="/logo.webp"
                         alt="CR Electric LLC"
                         className="h-32 w-auto object-contain"
                       />

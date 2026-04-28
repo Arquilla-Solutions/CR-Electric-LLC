@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-5">
               <div className="bg-white rounded-lg p-1.5 flex items-center justify-center shadow-sm">
                 <img
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="CR Electric LLC"
                   className="h-10 w-auto object-contain"
                 />
