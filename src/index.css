@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Voltline Electric — Brand Design System */
+
+@layer base {
+  :root {
+    /* Brand Blue: #1d4ed8 → HSL 226 71% 48% */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 6%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 6%;
+
+    --primary: 226 71% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 100% 97%;
+    --secondary-foreground: 226 71% 32%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 214 95% 93%;
+    --accent-foreground: 226 71% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 226 71% 48%;
+
+    --radius: 0.75rem;
+
+    --brand-blue: #1d4ed8;
+    --brand-blue-dark: #1e40af;
+    --brand-black: #0a0a0a;
+    --brand-ice: #eff6ff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Montserrat", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Hero entrance animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.9s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Subtle floating accent */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+  }
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  /* Brand shimmer used on hero badge */
+  @keyframes shimmer {
+    0%   { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .brand-shimmer {
+    background-image: linear-gradient(
+      110deg,
+      #1d4ed8 0%,
+      #93c5fd 45%,
+      #1d4ed8 55%,
+      #1e40af 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 6s linear infinite;
+  }
+
+  /* Continuous trust-strip marquee */
+  @keyframes marquee-x {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee-x 35s linear infinite;
+  }
+
+  /* Floating chat-button pulse ring */
+  @keyframes pulse-ring {
+    0%   { transform: scale(1);   opacity: 0.6; }
+    80%  { transform: scale(1.6); opacity: 0; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  .pulse-ring::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: #1d4ed8;
+    animation: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    z-index: -1;
+  }
+}
