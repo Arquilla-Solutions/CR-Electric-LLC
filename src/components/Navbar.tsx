@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Phone, Zap } from "lucide-react";
 
-const BLUE = "#1d4ed8";
+const RED = "#dc2626";
 const BLACK = "#0a0a0a";
 
 export default function Navbar() {
@@ -29,9 +29,9 @@ export default function Navbar() {
       >
         <a
           href="tel:5550102000"
-          className="flex items-center gap-2 text-white text-xs sm:text-sm font-medium hover:text-blue-300 transition-colors"
+          className="flex items-center gap-2 text-white text-xs sm:text-sm font-medium hover:text-red-300 transition-colors"
         >
-          <Phone className="h-3.5 w-3.5" style={{ color: BLUE }} />
+          <Phone className="h-3.5 w-3.5" style={{ color: RED }} />
           <span>Licensed Electrical Contractor · Springfield</span>
           <span className="text-white/30">·</span>
           <span>(555) 010-2000</span>
@@ -47,7 +47,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <div
               className="h-11 w-11 rounded-lg flex items-center justify-center shadow-sm"
-              style={{ background: BLUE }}
+              style={{ background: RED }}
             >
               <Zap className="h-6 w-6" style={{ color: "white" }} fill="white" />
             </div>
@@ -84,12 +84,12 @@ export default function Navbar() {
               href="tel:5550102000"
               className="flex items-center gap-1.5 text-gray-800 hover:text-black text-sm font-semibold transition-colors"
             >
-              <Phone className="h-3.5 w-3.5" style={{ color: BLUE }} />
+              <Phone className="h-3.5 w-3.5" style={{ color: RED }} />
               (555) 010-2000
             </a>
             <button
               onClick={() => scrollTo("quote")}
-              style={{ background: BLUE, color: "white" }}
+              style={{ background: RED, color: "white" }}
               className="px-5 py-2.5 rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               Free Quote
@@ -127,12 +127,12 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="flex items-center justify-center gap-2 mt-3 text-gray-800 py-3 border border-gray-200 rounded-lg font-semibold text-sm"
             >
-              <Phone className="h-4 w-4" style={{ color: BLUE }} />
+              <Phone className="h-4 w-4" style={{ color: RED }} />
               (555) 010-2000
             </a>
             <button
               onClick={() => scrollTo("quote")}
-              style={{ background: BLUE, color: "white" }}
+              style={{ background: RED, color: "white" }}
               className="mt-2 py-3.5 rounded-lg font-extrabold text-sm shadow-md"
             >
               Get a Free Quote

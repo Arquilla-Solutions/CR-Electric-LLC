@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const BRAND = "#1d4ed8";
+const BRAND = "#dc2626";
 
 export default function NotFound() {
   return (

@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Zap, ShieldCheck } from "lucide-react";
 
 const BLACK = "#0a0a0a";
-const BLUE = "#1d4ed8";
+const RED = "#dc2626";
 
 export default function Footer() {
   const scrollTo = (id: string) =>
@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="h-11 w-11 rounded-lg flex items-center justify-center"
-                style={{ background: BLUE }}
+                style={{ background: RED }}
               >
                 <Zap className="h-6 w-6" style={{ color: "white" }} fill="white" />
               </div>
@@ -34,7 +34,7 @@ export default function Footer() {
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5">
-              <ShieldCheck className="h-3.5 w-3.5" style={{ color: BLUE }} />
+              <ShieldCheck className="h-3.5 w-3.5" style={{ color: RED }} />
               <span className="text-white/80 text-xs font-semibold">
                 Licensed · Bonded · Insured
               </span>
@@ -50,18 +50,18 @@ export default function Footer() {
                 href="tel:5550102000"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors"
               >
-                <Phone className="h-4 w-4 flex-shrink-0" style={{ color: BLUE }} />
+                <Phone className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
                 (555) 010-2000
               </a>
               <a
                 href="mailto:hello@voltlineelectric.com"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors break-all"
               >
-                <Mail className="h-4 w-4 flex-shrink-0" style={{ color: BLUE }} />
+                <Mail className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
                 hello@voltlineelectric.com
               </a>
               <div className="flex items-start gap-2.5 text-white/65">
-                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: BLUE }} />
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: RED }} />
                 <span>
                   123 Main Street
                   <br />
@@ -102,8 +102,8 @@ export default function Footer() {
             <div
               className="p-5 rounded-xl border"
               style={{
-                background: "rgba(29,78,216,0.10)",
-                borderColor: "rgba(29,78,216,0.30)",
+                background: "rgba(220,38,38,0.10)",
+                borderColor: "rgba(220,38,38,0.30)",
               }}
             >
               <p className="text-white font-semibold text-sm mb-1">
@@ -114,7 +114,7 @@ export default function Footer() {
               </p>
               <button
                 onClick={() => scrollTo("quote")}
-                style={{ background: BLUE, color: "white" }}
+                style={{ background: RED, color: "white" }}
                 className="w-full py-2.5 rounded-lg text-sm font-extrabold hover:brightness-110 transition-all shadow"
               >
                 Get a Free Quote

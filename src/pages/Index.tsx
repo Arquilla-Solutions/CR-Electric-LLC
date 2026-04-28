@@ -29,10 +29,10 @@ import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 
-const BLUE = "#1d4ed8";
-const BLUE_DARK = "#1e40af";
+const RED = "#dc2626";
+const RED_DARK = "#991b1b";
 const BLACK = "#0a0a0a";
-const ICE = "#eff6ff";
+const BLUSH = "#fef2f2";
 
 const residentialServices = [
   {
@@ -191,7 +191,7 @@ export default function Index() {
         {/* Soft brand glow */}
         <div
           className="absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full pointer-events-none animate-float"
-          style={{ background: "radial-gradient(circle, rgba(29,78,216,0.22) 0%, transparent 65%)" }}
+          style={{ background: "radial-gradient(circle, rgba(220,38,38,0.22) 0%, transparent 65%)" }}
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full relative">
@@ -199,7 +199,7 @@ export default function Index() {
             <div className="md:col-span-3">
               <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-6 uppercase tracking-wide animate-fade-in-up shadow-lg"
-                style={{ background: BLUE, color: "white", animationDelay: "0ms" }}
+                style={{ background: RED, color: "white", animationDelay: "0ms" }}
               >
                 <ShieldCheck className="h-3.5 w-3.5" />
                 Licensed Electrical Contractor · Springfield
@@ -211,7 +211,7 @@ export default function Index() {
               >
                 Powering Homes &amp; Businesses.
                 <br />
-                <span style={{ color: BLUE }}>Done Right.</span>
+                <span style={{ color: RED }}>Done Right.</span>
               </h1>
 
               <p
@@ -235,7 +235,7 @@ export default function Index() {
                   "Code-Compliant Work",
                 ].map((t) => (
                   <div key={t} className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 flex-shrink-0" style={{ color: BLUE }} />
+                    <CheckCircle2 className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
                     <span>{t}</span>
                   </div>
                 ))}
@@ -247,7 +247,7 @@ export default function Index() {
               >
                 <button
                   onClick={scrollToQuote}
-                  style={{ background: BLUE, color: "white" }}
+                  style={{ background: RED, color: "white" }}
                   className="inline-flex items-center gap-2.5 px-7 py-4 rounded-lg font-extrabold text-base hover:brightness-110 transition-all shadow-2xl hover:-translate-y-0.5"
                 >
                   Get Your Free Quote
@@ -257,7 +257,7 @@ export default function Index() {
                   href="tel:5550102000"
                   className="inline-flex items-center gap-2.5 text-white border border-white/25 hover:border-white/60 hover:bg-white/5 px-7 py-4 rounded-lg font-semibold text-base transition-all"
                 >
-                  <Phone className="h-5 w-5" style={{ color: BLUE }} />
+                  <Phone className="h-5 w-5" style={{ color: RED }} />
                   (555) 010-2000
                 </a>
               </div>
@@ -291,7 +291,7 @@ export default function Index() {
                   key={`${dup}-${i}`}
                   className="flex items-center gap-2.5 text-gray-700 text-sm font-semibold flex-shrink-0"
                 >
-                  <Icon className="h-5 w-5" style={{ color: BLUE }} />
+                  <Icon className="h-5 w-5" style={{ color: RED }} />
                   {label}
                 </div>
               ))
@@ -307,7 +307,7 @@ export default function Index() {
             <Reveal>
               <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-5 uppercase tracking-wide"
-                style={{ background: ICE, color: BLUE_DARK }}
+                style={{ background: BLUSH, color: RED_DARK }}
               >
                 <Heart className="h-3.5 w-3.5" />
                 Meet Voltline
@@ -315,7 +315,7 @@ export default function Index() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                 Master-electrician work,
                 <br />
-                done <span style={{ color: BLUE }}>the right way.</span>
+                done <span style={{ color: RED }}>the right way.</span>
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
                 Voltline Electric is owned and operated by{" "}
@@ -340,7 +340,7 @@ export default function Index() {
                   "Licensed, bonded & insured",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2.5">
-                    <CheckCircle2 className="h-4 w-4 flex-shrink-0" style={{ color: BLUE }} />
+                    <CheckCircle2 className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
                     <span className="text-gray-700 text-sm">{item}</span>
                   </div>
                 ))}
@@ -367,14 +367,14 @@ export default function Index() {
                   <div
                     className="absolute inset-0 opacity-[0.10]"
                     style={{
-                      backgroundImage: `radial-gradient(circle at 1px 1px, ${BLUE} 1px, transparent 0)`,
+                      backgroundImage: `radial-gradient(circle at 1px 1px, ${RED} 1px, transparent 0)`,
                       backgroundSize: "20px 20px",
                     }}
                   />
                   <div className="relative text-center px-8">
                     <div
                       className="h-28 w-28 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-2xl animate-float"
-                      style={{ background: BLUE }}
+                      style={{ background: RED }}
                     >
                       <Zap className="h-14 w-14" style={{ color: "white" }} fill="white" />
                     </div>
@@ -384,7 +384,7 @@ export default function Index() {
                     <p className="text-white/60 text-sm uppercase tracking-[0.2em]">
                       Licensed Electrical Contractor
                     </p>
-                    <div className="h-px w-24 mx-auto my-5" style={{ background: BLUE }} />
+                    <div className="h-px w-24 mx-auto my-5" style={{ background: RED }} />
                     <p className="text-white/80 text-sm italic">
                       "If it's not safe, it's not finished."
                     </p>
@@ -401,9 +401,9 @@ export default function Index() {
                 >
                   <div
                     className="h-10 w-10 rounded-lg flex items-center justify-center"
-                    style={{ background: ICE }}
+                    style={{ background: BLUSH }}
                   >
-                    <ShieldCheck className="h-5 w-5" style={{ color: BLUE_DARK }} />
+                    <ShieldCheck className="h-5 w-5" style={{ color: RED_DARK }} />
                   </div>
                   <div>
                     <p className="font-extrabold text-gray-900 text-sm leading-tight">
@@ -413,7 +413,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-xl px-5 py-4 border border-gray-100 text-center">
-                  <p className="font-extrabold text-2xl leading-none" style={{ color: BLUE }}>
+                  <p className="font-extrabold text-2xl leading-none" style={{ color: RED }}>
                     20+
                   </p>
                   <p className="text-gray-500 text-xs mt-1">Years Wired</p>
@@ -431,7 +431,7 @@ export default function Index() {
             <div className="text-center mb-12">
               <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
-                style={{ background: ICE, color: BLUE_DARK }}
+                style={{ background: BLUSH, color: RED_DARK }}
               >
                 Our Services
               </div>
@@ -450,7 +450,7 @@ export default function Index() {
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="h-10 w-10 rounded-lg flex items-center justify-center"
-                style={{ background: BLUE }}
+                style={{ background: RED }}
               >
                 <Lightbulb className="h-5 w-5" style={{ color: "white" }} />
               </div>
@@ -468,13 +468,13 @@ export default function Index() {
                     <div
                       className="absolute inset-0 opacity-10"
                       style={{
-                        backgroundImage: `radial-gradient(circle at 1px 1px, ${BLUE} 1px, transparent 0)`,
+                        backgroundImage: `radial-gradient(circle at 1px 1px, ${RED} 1px, transparent 0)`,
                         backgroundSize: "16px 16px",
                       }}
                     />
                     <Icon
                       className="h-10 w-10 group-hover:scale-110 transition-transform duration-300 relative"
-                      style={{ color: BLUE }}
+                      style={{ color: RED }}
                     />
                   </div>
                   <div className="p-5">
@@ -491,7 +491,7 @@ export default function Index() {
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="h-10 w-10 rounded-lg flex items-center justify-center"
-                style={{ background: BLUE }}
+                style={{ background: RED }}
               >
                 <Building2 className="h-5 w-5" style={{ color: "white" }} />
               </div>
@@ -504,7 +504,7 @@ export default function Index() {
                 <div className="group bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
                   <div
                     className="h-28 flex items-center justify-center relative"
-                    style={{ background: `linear-gradient(135deg, ${BLUE_DARK} 0%, ${BLUE} 100%)` }}
+                    style={{ background: `linear-gradient(135deg, ${RED_DARK} 0%, ${RED} 100%)` }}
                   >
                     <Icon className="h-10 w-10 text-white/95 group-hover:scale-110 transition-transform duration-300" />
                   </div>
@@ -521,7 +521,7 @@ export default function Index() {
             <div className="text-center mt-6">
               <button
                 onClick={scrollToQuote}
-                style={{ background: BLUE, color: "white" }}
+                style={{ background: RED, color: "white" }}
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-extrabold hover:brightness-110 transition-all shadow-lg hover:-translate-y-0.5"
               >
                 Get a Free Quote
@@ -539,7 +539,7 @@ export default function Index() {
             <div className="text-center mb-12">
               <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
-                style={{ background: ICE, color: BLUE_DARK }}
+                style={{ background: BLUSH, color: RED_DARK }}
               >
                 How It Works
               </div>
@@ -556,18 +556,18 @@ export default function Index() {
                   {i < steps.length - 1 && (
                     <div
                       className="hidden md:block absolute top-10 left-[calc(50%+3.5rem)] right-[-50%] h-px"
-                      style={{ background: `linear-gradient(to right, ${BLUE}, transparent)` }}
+                      style={{ background: `linear-gradient(to right, ${RED}, transparent)` }}
                     />
                   )}
                   <div
                     className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-5 shadow-xl transition-transform hover:scale-110 duration-300"
                     style={{ background: BLACK }}
                   >
-                    <Icon className="h-8 w-8" style={{ color: BLUE }} />
+                    <Icon className="h-8 w-8" style={{ color: RED }} />
                   </div>
                   <span
                     className="text-xs font-extrabold tracking-widest uppercase block mb-1"
-                    style={{ color: BLUE_DARK }}
+                    style={{ color: RED_DARK }}
                   >
                     Step {num}
                   </span>
@@ -587,12 +587,12 @@ export default function Index() {
             <div className="text-center mb-12">
               <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
-                style={{ background: ICE, color: BLUE_DARK }}
+                style={{ background: BLUSH, color: RED_DARK }}
               >
                 Why Choose Us
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
-                Why people pick <span style={{ color: BLUE }}>Voltline</span>
+                Why people pick <span style={{ color: RED }}>Voltline</span>
               </h2>
             </div>
           </Reveal>
@@ -600,12 +600,12 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {whyUs.map(({ icon: Icon, title, desc }, i) => (
               <Reveal key={title} delay={i * 70}>
-                <div className="flex items-start gap-4 bg-white hover:bg-blue-50/50 rounded-xl p-6 border border-gray-100 hover:border-blue-200 transition-all duration-200 h-full hover:-translate-y-1 hover:shadow-md">
+                <div className="flex items-start gap-4 bg-white hover:bg-red-50/50 rounded-xl p-6 border border-gray-100 hover:border-red-200 transition-all duration-200 h-full hover:-translate-y-1 hover:shadow-md">
                   <div
                     className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0"
                     style={{ background: BLACK }}
                   >
-                    <Icon className="h-5 w-5" style={{ color: BLUE }} />
+                    <Icon className="h-5 w-5" style={{ color: RED }} />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 text-sm mb-1.5">{title}</h3>
@@ -622,8 +622,8 @@ export default function Index() {
       <section className="py-20 sm:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <Reveal>
-            <div className="relative bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-100 shadow-sm p-10 sm:p-14 text-center">
-              <Quote className="h-10 w-10 mx-auto mb-5" style={{ color: BLUE }} />
+            <div className="relative bg-gradient-to-br from-red-50 to-white rounded-2xl border border-red-100 shadow-sm p-10 sm:p-14 text-center">
+              <Quote className="h-10 w-10 mx-auto mb-5" style={{ color: RED }} />
               <p className="text-xl sm:text-2xl text-gray-800 leading-relaxed font-medium italic mb-7">
                 Showed up on time, fixed the panel cleanly, and walked me
                 through every step. Fair price, top-notch work — exactly what
@@ -631,7 +631,7 @@ export default function Index() {
               </p>
               <div className="flex justify-center gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5" fill="currentColor" style={{ color: BLUE }} />
+                  <Star key={i} className="h-5 w-5" fill="currentColor" style={{ color: RED }} />
                 ))}
               </div>
               <p className="text-gray-500 text-sm font-semibold">
@@ -654,7 +654,7 @@ export default function Index() {
         <div
           className="absolute inset-0 opacity-[0.06] pointer-events-none"
           style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, ${BLUE} 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 1px 1px, ${RED} 1px, transparent 0)`,
             backgroundSize: "26px 26px",
           }}
         />
@@ -662,7 +662,7 @@ export default function Index() {
           <Reveal>
             <div
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-6 uppercase tracking-wide"
-              style={{ background: "rgba(29,78,216,0.18)", color: "#93c5fd" }}
+              style={{ background: "rgba(220,38,38,0.18)", color: "#fca5a5" }}
             >
               <MapPin className="h-3.5 w-3.5" />
               Service Area
@@ -679,7 +679,7 @@ export default function Index() {
           <div className="flex flex-wrap justify-center gap-2.5 mb-10">
             {areas.map((name, i) => (
               <Reveal key={name} delay={i * 30}>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border border-white/15 text-white/65 hover:border-blue-400 hover:text-blue-300 transition-colors cursor-default">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border border-white/15 text-white/65 hover:border-red-400 hover:text-red-300 transition-colors cursor-default">
                   <MapPin className="h-3 w-3" />
                   {name}
                 </div>
@@ -690,7 +690,7 @@ export default function Index() {
           <Reveal>
             <button
               onClick={scrollToQuote}
-              style={{ background: BLUE, color: "white" }}
+              style={{ background: RED, color: "white" }}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-extrabold text-base hover:brightness-110 transition-all shadow-2xl hover:-translate-y-0.5"
             >
               Get a Free Quote
@@ -707,7 +707,7 @@ export default function Index() {
             <div className="text-center mb-12">
               <div
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
-                style={{ background: ICE, color: BLUE_DARK }}
+                style={{ background: BLUSH, color: RED_DARK }}
               >
                 FAQ
               </div>
@@ -720,17 +720,17 @@ export default function Index() {
           <div className="space-y-2.5">
             {faqs.map(({ q, a }, idx) => (
               <Reveal key={idx} delay={idx * 60}>
-                <div className="border border-gray-200 rounded-xl overflow-hidden hover:border-blue-300 transition-colors">
+                <div className="border border-gray-200 rounded-xl overflow-hidden hover:border-red-300 transition-colors">
                   <button
                     onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                    className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-blue-50/30 transition-colors"
+                    className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-red-50/30 transition-colors"
                   >
                     <span className="font-bold text-gray-900 text-sm sm:text-base pr-4">{q}</span>
                     <ChevronDown
                       className={`h-5 w-5 flex-shrink-0 transition-transform duration-300 ${
                         openFaq === idx ? "rotate-180" : ""
                       }`}
-                      style={{ color: BLUE }}
+                      style={{ color: RED }}
                     />
                   </button>
                   <div
@@ -756,13 +756,13 @@ export default function Index() {
               className="rounded-2xl p-8 sm:p-12 text-center border"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(29,78,216,0.12) 0%, rgba(29,78,216,0.03) 100%)",
-                borderColor: "rgba(29,78,216,0.30)",
+                  "linear-gradient(135deg, rgba(220,38,38,0.12) 0%, rgba(220,38,38,0.03) 100%)",
+                borderColor: "rgba(220,38,38,0.30)",
               }}
             >
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
                 Ready to power up<br />
-                <span style={{ color: BLUE }}>the right way?</span>
+                <span style={{ color: RED }}>the right way?</span>
               </h2>
               <p className="text-white/65 text-base sm:text-lg mb-8 max-w-xl mx-auto">
                 Get a free, no-obligation quote today. Honest pricing, fast
@@ -771,7 +771,7 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button
                   onClick={scrollToQuote}
-                  style={{ background: BLUE, color: "white" }}
+                  style={{ background: RED, color: "white" }}
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-extrabold hover:brightness-110 transition-all shadow-2xl hover:-translate-y-0.5"
                 >
                   Get a Free Quote
@@ -781,7 +781,7 @@ export default function Index() {
                   href="tel:5550102000"
                   className="inline-flex items-center justify-center gap-2 text-white border border-white/25 hover:border-white/60 hover:bg-white/5 px-8 py-4 rounded-lg font-semibold transition-all"
                 >
-                  <Phone className="h-5 w-5" style={{ color: BLUE }} />
+                  <Phone className="h-5 w-5" style={{ color: RED }} />
                   (555) 010-2000
                 </a>
               </div>

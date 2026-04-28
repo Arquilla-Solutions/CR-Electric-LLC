@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Brand Blue: #1d4ed8 → HSL 226 71% 48% */
+    /* Brand Red: #dc2626 → HSL 0 72% 51% */
     --background: 0 0% 100%;
     --foreground: 0 0% 6%;
 
@@ -16,31 +16,31 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 6%;
 
-    --primary: 226 71% 48%;
+    --primary: 0 72% 51%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 214 100% 97%;
-    --secondary-foreground: 226 71% 32%;
+    --secondary: 0 86% 97%;
+    --secondary-foreground: 0 70% 30%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 214 95% 93%;
-    --accent-foreground: 226 71% 30%;
+    --accent: 0 93% 94%;
+    --accent-foreground: 0 70% 28%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 13% 88%;
     --input: 220 13% 88%;
-    --ring: 226 71% 48%;
+    --ring: 0 72% 51%;
 
     --radius: 0.75rem;
 
-    --brand-blue: #1d4ed8;
-    --brand-blue-dark: #1e40af;
+    --brand-red: #dc2626;
+    --brand-red-dark: #991b1b;
     --brand-black: #0a0a0a;
-    --brand-ice: #eff6ff;
+    --brand-blush: #fef2f2;
   }
 
   html {
@@ -94,10 +94,10 @@
   .brand-shimmer {
     background-image: linear-gradient(
       110deg,
-      #1d4ed8 0%,
-      #93c5fd 45%,
-      #1d4ed8 55%,
-      #1e40af 100%
+      #dc2626 0%,
+      #fca5a5 45%,
+      #dc2626 55%,
+      #991b1b 100%
     );
     background-size: 200% 100%;
     animation: shimmer 6s linear infinite;
@@ -123,7 +123,7 @@
     position: absolute;
     inset: 0;
     border-radius: 9999px;
-    background: #1d4ed8;
+    background: #dc2626;
     animation: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     z-index: -1;
   }
